@@ -30,7 +30,10 @@ body {
     align-items: center;
     flex-direction: column;
     box-shadow: 0 0 1px 5px gray;
-    max-width: 500px;
+    max-width: 900px;
+    min-width: 450px;
+    min-height: 500px;
+    max-height: 1200px;
 }
 
 #top-bar {
@@ -73,6 +76,17 @@ body {
     border-radius: 10px;
     outline: 3px solid rgb(92, 92, 92);
     box-shadow: 0 0 5px 2px gray;
+    max-height: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 50px;
+}
+
+#result {
+    color: black;
+    padding-right: 25px;
+    padding-bottom: 25px;
 }
 
 #buttons {
@@ -82,22 +96,22 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 11px;
+    gap: 12px;
     margin: 10px 0;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .btn {
-    height: calc((69% / 3) - 5px);
-    width: calc((88% / 5) - 5px);
+    height: calc((72% / 4) - 5px);
+    width: calc((86% / 5) - 5px);
     background-color: darkgray;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     color: rgb(236, 236, 236);
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    outline: 3px solid rgb(58, 58, 58);
+    border: 3px solid rgb(58, 58, 58);
     box-shadow: 0 0 5px 2px rgb(63, 63, 63);
 }
 
@@ -112,4 +126,74 @@ body {
 
 .red:hover {
     background-color: rgb(136, 0, 0);
+}
+
+@media (max-width: 899px) {
+    #company {
+        font-size: 22px;
+    }
+    #logo {
+        height: 35px;
+        width: 35px;
+    }
+    #num-output {
+        outline: 5px solid rgb(92, 92, 92);
+    }
+}
+
+@media (min-width: 900px) {
+    #company {
+        font-size: 24px;
+    }
+    #logo {
+        height: 40px;
+        width: 40px;
+    }
+    #num-output {
+        outline: 5px solid rgb(92, 92, 92);
+    }
+}
+
+@media (min-width) {
+    #company {
+        font-size: 32px;
+    }
+    #logo {
+        height: 60px;
+        width: 60px;
+    }
+    #num-output {
+        outline: 6px solid rgb(92, 92, 92);
+    }
+}
+
+@media (min-width: 1100px) {
+    #buttons {
+        height: 50%;
+        margin-bottom: 20px;
+        gap: 13px;
+    }
+    #company {
+        font-size: 36px;
+    }
+    #logo {
+        height: 70px;
+        width: 70px;
+    }
+    #num-output {
+        outline: 6px solid rgb(92, 92, 92);
+    }
+}
+
+@media (min-width: 1300px) {
+    #company {
+        font-size: 40px;
+    }
+    #logo {
+        height: 80px;
+        width: 80px;
+    }
+    #num-output {
+        outline: 7px solid rgb(92, 92, 92);
+    }
 }
