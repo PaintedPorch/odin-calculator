@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    outline: 1px solid red;
 }
 
 body {
@@ -25,11 +24,13 @@ body {
     height: 75%;
     background: black;
     border-radius: 25px;
-    outline: 3px solid gray;
+    outline: 3px solid rgb(102, 102, 102);
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    box-shadow: 0 0 1px 5px gray;
+    max-width: 500px;
 }
 
 #top-bar {
@@ -45,22 +46,70 @@ body {
     height: 20px;
     border-radius: 50%;
     outline: 2px solid gray;
-    margin-right: 7%;
+    margin-right: 3%;
+    margin-top: 10px;
 }
 
 #company {
-    margin-left: 7%;
+    margin-left: 3%;
     color: gray;
     font-weight: bold;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 #display {
     width: 90%;
-    height: 20%;
+    height: 31%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#num-output {
+    width: 90%;
+    height: 72%;
+    background-color: lightgray;
+    border-radius: 10px;
+    outline: 3px solid rgb(92, 92, 92);
+    box-shadow: 0 0 5px 2px gray;
 }
 
 #buttons {
-    width: 90%;
-    height: 68%;
+    width: 85%;
+    height: 54%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 11px;
+    margin: 10px 0;
+    padding-bottom: 5px;
+}
+
+.btn {
+    height: calc((69% / 3) - 5px);
+    width: calc((88% / 5) - 5px);
+    background-color: darkgray;
+    border-radius: 10px;
+    display: flex;
+    color: rgb(236, 236, 236);
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    outline: 3px solid rgb(58, 58, 58);
+    box-shadow: 0 0 5px 2px rgb(63, 63, 63);
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+.red {
+    background-color: rgb(185, 0, 0);
+    font-size: 9px;
+}
+
+.red:hover {
+    background-color: rgb(136, 0, 0);
 }
