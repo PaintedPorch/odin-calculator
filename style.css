@@ -31,9 +31,9 @@ body {
     flex-direction: column;
     box-shadow: 0 0 1px 5px gray;
     max-width: 800px;
-    min-width: 450px;
+    min-width: 250px;
     min-height: 500px;
-    max-height: 1200px;
+    max-height: 1300px;
 }
 
 #top-bar {
@@ -51,8 +51,8 @@ body {
     outline: 2px solid gray;
     margin-right: 3%;
     margin-top: 10px;
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 55px;
+    max-height: 55px;
 }
 
 #company {
@@ -132,7 +132,7 @@ body {
     align-items: center;
     font-weight: bold;
     border: 3px solid rgb(58, 58, 58);
-    box-shadow: 0 0 5px 2px rgb(63, 63, 63);
+    box-shadow: 0 0 3px 2px rgb(63, 63, 63);
     font-size: 24px;
 }
 
@@ -154,6 +154,26 @@ body {
     background-color: rgb(136, 0, 0);
 }
 
+@media (max-width: 500px)
+{
+    #buttons {
+        width: 93%;
+        height: 52%;
+        margin-top: -5px;
+    }
+    .btn {
+        height: calc((58% / 4) - 5px);
+        width: calc((66% / 5) - 5px);
+        font-size: 18px;
+    }
+    #calculator {
+        width: 78%;
+    }
+    .red {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 899px) {
     #company {
         font-size: 22px;
@@ -164,6 +184,16 @@ body {
     }
     #num-output {
         outline: 5px solid rgb(92, 92, 92);
+    }
+    #calculator {
+        height: 78%;
+    }
+    #buttons {
+        padding-bottom: 25px;
+    }
+    .btn {
+        height: calc((75% / 4) - 5px);
+        width: calc((78% / 5) - 5px);
     }
 }
 
@@ -177,19 +207,6 @@ body {
     }
     #num-output {
         outline: 5px solid rgb(92, 92, 92);
-    }
-}
-
-@media (min-width) {
-    #company {
-        font-size: 32px;
-    }
-    #logo {
-        height: 60px;
-        width: 60px;
-    }
-    #num-output {
-        outline: 6px solid rgb(92, 92, 92);
     }
 }
 
